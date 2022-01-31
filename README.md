@@ -1,4 +1,4 @@
-# Gatsbdy demo project
+# Gatsby demo project
 
 ## Pre-requisites
 

@@ -1,7 +1,10 @@
 # Gatsbdy demo project
 
+## Pre-requisites
 
-## Build unprivileged docker image
+- [Docker](https://docs.docker.com/engine/install/)
+
+## Build unprivileged Nginx docker image
 
 ```bash
 DOCKER_BUILDKIT=1 docker build -t gatsby-nginx .

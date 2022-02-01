@@ -32,7 +32,7 @@ docker run --rm -it -p 8080:8080 $DOCKER_LOGIN/gatsby-nginx:latest
 xdg-open http://localhost:8080/
 ```
 
-## Build locally
+## Build project locally
 
 ```bash
 npm install --global yarn

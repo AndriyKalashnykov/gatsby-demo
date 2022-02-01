@@ -3,7 +3,14 @@
 
 ## Pre-requisites
 
-- [Docker](https://docs.docker.com/engine/install/)
+* [Docker](https://docs.docker.com/engine/install/)
+* [curl](https://help.ubidots.com/en/articles/2165289-learn-how-to-install-run-curl-on-windows-macosx-linux)
+* [nvm](https://github.com/nvm-sh/nvm) - Optional, only if you planning too build the project locally
+  ```bash
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+  nvm install 16
+  nvm use 16
+  ```
 
 ## Build unprivileged Nginx docker image
 
@@ -22,4 +29,11 @@ docker run --rm -it -p 8080:8080 $DOCKER_LOGIN/gatsby-nginx:latest
 
 ```bash
 xdg-open http://localhost:8080/
+```
+
+## Build locally
+
+```bash
+npm install --global yarn
+yarn install --network-timeout 1000000 && yarn build
 ```

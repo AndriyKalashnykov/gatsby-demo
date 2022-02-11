@@ -10,7 +10,7 @@
 * [nvm](https://github.com/nvm-sh/nvm) - Optional, only if you planning too build the project locally
 
 ```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v$(curl -sL https://api.github.com/repos/nvm-sh/nvm/releases/latest  | grep '"tag_name":' | awk -F '"' '{printf("%s",$4)}' | cut -c 2-)/install.sh | bash
 nvm install 16
 nvm use 16
 ```
